@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DecimaActivity">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="300dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/italia" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="Que país é este?"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <RadioGroup
+        android:id="@+id/rgItalia"
+        android:layout_width="280dp"
+        android:layout_height="142dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <RadioButton
+            android:id="@+id/rdbHungria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hungria"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdbMexico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mexico"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdbItalia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Itália"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdbBrasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brasil"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnResponderNove"
+        android:layout_width="278dp"
+        android:layout_height="37dp"
+        android:text="Responder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgItalia" />
+
+    <Button
+        android:id="@+id/btnAvancarNove"
+        android:layout_width="278dp"
+        android:layout_height="37dp"
+        android:onClick="startDecimaPriActivity"
+        android:text="Avançar"
+        app:layout_constraintEnd_toEndOf="@+id/btnResponderNove"
+        app:layout_constraintStart_toStartOf="@+id/btnResponderNove"
+        app:layout_constraintTop_toBottomOf="@+id/btnResponderNove" />
+</androidx.constraintlayout.widget.ConstraintLayout>

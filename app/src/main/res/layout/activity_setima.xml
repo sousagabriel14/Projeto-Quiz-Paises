@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetimaActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="300dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cuba" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="283dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:text="Que país é este?"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <RadioGroup
+        android:id="@+id/rgCuba"
+        android:layout_width="283dp"
+        android:layout_height="143dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <RadioButton
+            android:id="@+id/rdbGrecia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grécia"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdbJamaica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jamaica"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdbGuatemala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guatemala"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdbCuba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuba"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnResponderSeis"
+        android:layout_width="278dp"
+        android:layout_height="37dp"
+        android:text="Responder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgCuba" />
+
+    <Button
+        android:id="@+id/btnAvancarSeis"
+        android:layout_width="278dp"
+        android:layout_height="37dp"
+        android:onClick="startOitavaActivity"
+        android:text="Avancar"
+        app:layout_constraintEnd_toEndOf="@+id/btnResponderSeis"
+        app:layout_constraintStart_toStartOf="@+id/btnResponderSeis"
+        app:layout_constraintTop_toBottomOf="@+id/btnResponderSeis" />
+</androidx.constraintlayout.widget.ConstraintLayout>
